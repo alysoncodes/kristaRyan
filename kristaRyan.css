@@ -1,0 +1,129 @@
+/*------------------------------------
+ *   VARIABLES
+ *------------------------------------*/
+
+/**GLOBAL COLORS**/
+
+@white: #FFFFFF;
+@black: #1A1818;
+@yellow: #F0DB61;
+@beige: #F4F1E9;
+@dark: #0B2A2A;
+@pink: #AA1F66;
+
+/**BREAKPOINTS**/
+
+@maxBP: 1649px;
+@deskBP: 768px;
+@mBP: 767px;
+
+/**OTHER VARIABLES**/
+
+@mobile:~"only screen and (max-width: 767px)";
+@desktop:~"only screen and (min-width: 768px)";
+@tablet: ~"only screen and (max-width: 1024px) and (min-width:768px)";
+@desktopXL: ~"only screen and (min-width: 1649px)"; 
+
+
+/*------------------------------------
+ *   MIXINS
+ *------------------------------------*/
+
+
+
+
+/*------------------------------------
+ *   CUSTOM FONTS
+ *------------------------------------*/
+
+@font-face {
+  font-family: 'typewriter';
+  src: url('https://static1.squarespace.com/static/637d8204cd653e686a4854df/t/6386d12d4f4fdd080099ba88/1669779757848/Apothecary+Typewewriter.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'nanum';
+  src: url('https://static1.squarespace.com/static/637d8204cd653e686a4854df/t/6386d4c43522281a4ed89fd4/1669780678450/NanumMyeongjo-Regular.woff') format('woff'), url('https://static1.squarespace.com/static/637d8204cd653e686a4854df/t/638949312681af645b1d18a4/1669941553621/Apothecary+Typewewriter.woff2') format('woff2');
+}
+
+/*------------------------------------
+ *   GLOBAL STYLES
+ *------------------------------------*/
+html{
+  scroll-behavior:smooth;
+}
+
+Html, body {
+  overflow-x: hidden !important;
+}
+
+h4{
+}
+h1, h2, h3 {
+  font-family: nanum;
+}
+
+h1{
+  
+  
+}
+
+//DEFINE KEYFRAMES
+
+
+
+
+//button centering on mobile
+
+@media @mobile {
+  .sqs-block-button * {
+    text-align: center!important;
+    z-index: 100!important;
+  }
+}
+
+//fixing button center issue
+@media @mobile{
+.sqs-block-button-container--left {
+display:block !important;
+  }
+
+.sqs-block-button-container--right {
+display:block !important;
+  }
+
+}
+
+
+//center text on mobile
+@media only screen and (max-width: 640px) {h1,h2,h3,h4,p{
+  text-align: center!important;
+  }}
+
+
+//button styling
+
+
+/*------------------------------------
+ *  HEADER
+ *------------------------------------*/
+
+/*------------------------------------
+ *  FOOTER
+ *------------------------------------*/
+
+@media @desktop{
+  section[data-section-id="640a4105aefb0b04f89972d8"] {.sqs-row {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    }}
+
+
+}
+
+
+/*------------------------------------
+ * PAGES: HOME
+ *------------------------------------*/
