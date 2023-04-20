@@ -1,0 +1,60 @@
+
+//code block buttons
+<div class="center-align">
+<h4 class="link-underline"><a href="/services" >View Services</a></h4>
+</div>
+
+
+//button styling (white)
+
+.link-underline{
+  position:relative;
+  text-decoration:none;
+  display:inline-block;
+  
+}
+.link-underline:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #fff;  
+  transform: scaleX(1);  
+  transition: transform 650ms ease-in-out;
+  transform-origin:0% 100%
+}
+.link-underline:hover:after { 
+  transform: scaleX(0);
+  transform-origin:0% 50%;
+}
+div.center-align {
+  text-align: center ;
+}
+
+@media @mobile{
+  div.mobileCenter{
+    text-align: center ;
+  }
+}
+
+//button styling (black)
+
+.link-underline2{
+  position:relative;
+  text-decoration:none;
+  display:inline-block;
+  
+}
+.link-underline2:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #000;  
+  transform: scaleX(1);  
+  transition: transform 650ms ease-in-out;
+  transform-origin:0% 100%
+}
+.link-underline2:hover:after { 
+  transform: scaleX(0);
+  transform-origin:0% 50%;
+}
+div.center-align {
+  text-align: center 
+}
