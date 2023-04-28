@@ -89,10 +89,11 @@
 </svg>
 <style>
 
+
 @keyframes color {
-0%,25% {fill:#E16842}
-26%, 50% {fill:#025ce7}
-51%,75% {fill:#d3de25}
-76%,100% {fill:#fedde7}
+0%,25% {fill:#F0DB61}
+26%, 50% {fill:#AA1F66}
+51%,75% {fill:#F4F1E9}
+76%,100% {fill:#ffffff}
 }
 </style>
