@@ -166,13 +166,23 @@ div.center-align {
 nav.header-nav-list a{
   font-family: 'termina';
   text-transform: uppercase !important;
-  letter-spacing: .1rem
+  letter-spacing: .1rem;
+  font-weight: 500 !important;
 }
-.header-actions-action.header-actions-action--cta .sqs-button-element--primary{
+nav.header-nav-list a:hover{
+  color: @pink !important;
+}
+.header-actions-action.header-actions-action--cta .sqs-button-element--primary {
   color: @yellow !important;
-  
+  font-family: 'termina' !important;
+  text-transform: uppercase !important;
+  letter-spacing: .09rem !important;
 }
-
+.header-actions-action.header-actions-action--cta .sqs-button-element--primary:hover{
+  color: @pink !important;
+  background-color: @yellow !important;
+  border: 1px solid @pink !important;
+}
 /*------------------------------------
  *  FOOTER
  *------------------------------------*/
@@ -539,4 +549,26 @@ outline-width:0 !important;
        
      
   }
+}
+
+
+//newsletter signup section
+
+h2.newsletter-form-header-title{
+  font-family: 'avallon' !important
+}
+
+button.newsletter-form-button{
+  width: 15rem !important;
+}
+
+
+
+/*------------------------------------
+ * PAGES: Blog Home
+ *------------------------------------*/
+
+#block-yui_3_17_2_1_1682636932635_10177{
+  margin-top: -18vw !important;
+  
 }
