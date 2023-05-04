@@ -2,6 +2,7 @@
  *   VARIABLES
  *------------------------------------*/
 
+
 /**GLOBAL COLORS**/
 
 @white: #FFFFFF;
@@ -67,7 +68,13 @@ h4{
   text-transform: uppercase;
 }
 
-
+p.sqsrte-small{
+  
+  letter-spacing: -.13rem;
+  font-family: termina !important;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
 
 //DEFINE KEYFRAMES
 
@@ -159,6 +166,26 @@ div.center-align {
   text-align: center 
 }
 
+// pill buttons on hover
+//outline button
+a.sqs-button-element--secondary:hover {
+   color: @yellow !important;
+}
+a.sqs-button-element--secondary{
+    color: black !important;
+  }
+
+//solid yellow button
+
+a.sqs-button-element--primary{
+  color: @pink !important;
+  
+}
+a.sqs-button-element--primary:hover{
+  color: @yellow !important;
+  background-color: @pink !important;
+  
+}
 /*------------------------------------
  *  HEADER
  *------------------------------------*/
@@ -198,10 +225,21 @@ nav.header-nav-list a:hover{
 
 }
 
-
+#block-326b6c1363cc0587fc37 a{
+  color: white !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem !important;
+  margin-bottom: .7vw;
+}
+#block-326b6c1363cc0587fc37 a:hover{
+  color: @yellow !important;
+}
 /*------------------------------------
  * PAGES: HOME
  *------------------------------------*/
+
+
 
 
 //section one video 
@@ -269,17 +307,58 @@ section[data-section-id="64419c262afa7a26a2392aee"]{
   transform: translateY(-15vw);
 }
 
+//keep going video
 
-//summary block section, button
+section[data-section-id="64486923919a483ffcea4f07"]{
+/** Fluid Video Block**/
 
-#block-yui_3_17_2_1_1682613859313_13087{
-  a{
-    color: black !important;
+
+.video-block {
+  .sqs-native-video .native-video-player {
+    padding-top: 0 !important;
   }
-  a:hover{
-    color: white !important;
+
+  .video-player .plyr__poster {
+    object-fit:cover !important;
+    background-size:cover !important;
+    
   }
+  
+  .video-player .plyr video {
+  object-fit: cover !important;
+     border-radius: 150px 0 150px 0 !important;
+
 }
+  .embed-block-wrapper {
+    height: 100% !important;
+  }
+  .intrinsic {
+    height: 100% !important;
+  }
+
+  .sqs-block-content {
+    height: 100% !important;
+  }
+
+  .sqs-native-video {
+    height: 100% !important;
+  }
+  
+  
+}
+
+
+}
+
+
+//resources blog section
+
+a.summary-title-link{
+  font-family: 'termina';
+  text-transform: uppercase;
+  
+}
+
 
 //testimonial section
 
@@ -291,7 +370,10 @@ section.bright {
   .sqs-gallery-design-carousel
    {
      
-     p{
+     
+
+   @media @desktop {
+      p{
        font-size: 2rem;
        line-height: 2.5rem;
        padding-left: 30vw;
@@ -299,9 +381,6 @@ section.bright {
        color: @pink;
        text-transform: uppercase;
      }
-     
-
-   @media @desktop {
 
   .sqs-gallery-controls .previous{
     text-align:center;
@@ -412,6 +491,16 @@ outline-width:0 !important;
 /**MOBILE CODE**/
 
   @media @mobile{
+     p{
+       font-size: 2rem;
+       line-height: 2.5rem;
+       //padding-left: 30vw;
+       //padding-right: 30vw;
+       color: @pink;
+       text-transform: uppercase;
+     }
+    
+    
     .sqs-gallery-controls .previous{
     transform:translateY(-50%);
     position:absolute;
@@ -571,4 +660,200 @@ button.newsletter-form-button{
 #block-yui_3_17_2_1_1682636932635_10177{
   margin-top: -18vw !important;
   
+}
+
+
+//blog pages summary block section
+
+.summary-header-text{
+  font-family: 'termina';
+  text-transform: uppercase;
+  
+}
+/*------------------------------------
+ * PAGES: Speaking
+ *------------------------------------*/
+
+
+
+#block-yui_3_17_2_1_1682967141714_4885{
+  h1{
+    text-transform: none !important;
+  }
+}
+
+//section one video 
+
+section[data-section-id="644fec54e7f947423ae5c1a8"]{
+/** Fluid Video Block**/
+
+
+.video-block {
+  .sqs-native-video .native-video-player {
+    padding-top: 0 !important;
+  }
+
+  .video-player .plyr__poster {
+    object-fit:cover !important;
+    background-size:cover !important;
+    
+  }
+  
+  .video-player .plyr video {
+  object-fit: cover !important;
+     border-radius: 0 150px 0 0 !important;
+
+}
+  .embed-block-wrapper {
+    height: 100% !important;
+  }
+  .intrinsic {
+    height: 100% !important;
+  }
+
+  .sqs-block-content {
+    height: 100% !important;
+  }
+
+  .sqs-native-video {
+    height: 100% !important;
+  }
+  
+  
+}
+
+
+}
+
+
+/*------------------------------------
+ * PAGES: Contact
+ *------------------------------------*/
+//moving up yellow squiggle
+
+#block-yui_3_17_2_1_1682973793730_19893{
+  transform: translateY(-20vw);
+}
+
+
+//section one video 
+
+section[data-section-id="6450263c6f3d0a41b6bcbd0c"]{
+/** Fluid Video Block**/
+
+
+.video-block {
+  .sqs-native-video .native-video-player {
+    padding-top: 0 !important;
+    
+  }
+
+  .video-player .plyr__poster {
+    object-fit:cover !important;
+    background-size:cover !important;
+   
+  }
+  
+  .video-player .plyr video {
+  object-fit: cover !important;
+    border-radius: 0 150px 0 0 !important;
+}
+  .embed-block-wrapper {
+    height: 100% !important;
+  }
+  .intrinsic {
+    height: 100% !important;
+  }
+
+  .sqs-block-content {
+    height: 100% !important;
+  }
+
+  .sqs-native-video {
+    height: 100% !important;
+  }
+  }
+}
+
+
+/*------------------------------------
+ * PAGES: About
+ *------------------------------------*/
+
+section[data-section-id="645146ee57896348a5d0168b"]{
+  /** Fluid Video Block**/
+
+
+.video-block {
+  .sqs-native-video .native-video-player {
+    padding-top: 0 !important;
+    
+  }
+
+  .video-player .plyr__poster {
+    object-fit:cover !important;
+    background-size:cover !important;
+   
+  }
+  
+  .video-player .plyr video {
+  object-fit: cover !important;
+    
+}
+  .embed-block-wrapper {
+    height: 100% !important;
+  }
+  .intrinsic {
+    height: 100% !important;
+  }
+
+  .sqs-block-content {
+    height: 100% !important;
+  }
+
+  .sqs-native-video {
+    height: 100% !important;
+  }
+  }
+}
+
+/*------------------------------------
+ * PAGES: Work with me
+ *------------------------------------*/
+
+section[data-section-id="645158576072fe5d2dc8bbd2"]{
+  /** Fluid Video Block**/
+
+
+.video-block {
+  .sqs-native-video .native-video-player {
+    padding-top: 0 !important;
+    
+  }
+
+  .video-player .plyr__poster {
+    object-fit:cover !important;
+    background-size:cover !important;
+   
+  }
+  
+  .video-player .plyr video {
+  object-fit: cover !important;
+    border-radius: 150px 0 150px 0 !important;
+}
+  .embed-block-wrapper {
+    height: 100% !important;
+  }
+  .intrinsic {
+    height: 100% !important;
+  }
+
+  .sqs-block-content {
+    height: 100% !important;
+  }
+
+  .sqs-native-video {
+    height: 100% !important;
+  }
+  }
 }
